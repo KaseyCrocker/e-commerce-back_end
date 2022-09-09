@@ -16,12 +16,6 @@ router.get('/', (req, res) => {
           'stock',
           'category_id'
         ]
-      },
-      {
-        model: ProductTag,
-        attributes: [
-          'product_id'
-        ]
       }
     ]
   })
@@ -46,12 +40,6 @@ router.get('/:id', (req, res) => {
         'price',
         'stock',
         'category_id']
-      },
-      {
-        model: ProductTag,
-        attributes: [
-          'product_id'
-        ]
       }
     ]
   })
